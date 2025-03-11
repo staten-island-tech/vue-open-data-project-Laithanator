@@ -1,6 +1,7 @@
 <template>
   <main>
     <FrontHeader />
+    <InteractHeader />
     <div class="bg-red-700 flex flex-wrap justify-center">
       <TestCard v-for="school in schools" :key="school.location" :school="school" />
     </div>
@@ -10,6 +11,7 @@
 <script setup>
 import FrontHeader from '@/components/FrontHeader.vue'
 import TestCard from '@/components/TestCard.vue'
+import InteractHeader from '@/components/InteractHeader.vue'
 import { onMounted, reactive, ref } from 'vue'
 let schools = ref([])
 async function getSchools() {

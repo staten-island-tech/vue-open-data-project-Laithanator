@@ -9,11 +9,16 @@ const router = createRouter({
       name: 'frontpage',
       component: FrontPage,
     },
-    /*{
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-    },*/
+    {
+      path: '/money',
+      name: 'money',
+      component: () => import('../views/MoneyPage.vue'),
+    },
+    {
+      path: '/percent',
+      name: 'percent',
+      component: () => import('../views/PercentPage.vue'),
+    },
   ],
 })
 

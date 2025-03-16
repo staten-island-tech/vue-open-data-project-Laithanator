@@ -32,7 +32,6 @@ onMounted(() => {
         else percents.value[9]++
       }
       const myChart = document.getElementById('myChart')
-      console.log(percents.value)
       new Chart(myChart, {
         type: 'bar',
         data: {
@@ -73,21 +72,21 @@ onMounted(() => {
           scales: {
             x: {
               ticks: {
-                color: 'rgb(255, 165, 0)', // X-axis label color
+                color: 'rgb(255, 165, 0)',
                 font: {
                   size: 17,
                   weight: 'bold',
-                  family: 'Arial', // Custom font family
+                  family: 'Arial',
                 },
               },
             },
             y: {
               ticks: {
-                color: 'rgb(0, 100, 255)', // Y-axis label color
+                color: 'rgb(0, 100, 255)',
                 font: {
                   size: 17,
                   weight: 'bold',
-                  family: 'Arial', // Custom font family
+                  family: 'Arial',
                 },
               },
             },
@@ -95,21 +94,21 @@ onMounted(() => {
           plugins: {
             title: {
               display: true,
-              text: 'Number of Schools and the Percent of Funding Received that they Deserved',
+              text: 'Number of Schools and the Percent of FSF Recieved',
               font: {
                 size: 20,
                 weight: 'bold',
-                family: 'Arial', // Title font family
+                family: 'Arial',
               },
-              color: 'rgb(0, 250, 0)', // Title text color
+              color: 'rgb(0, 250, 0)',
             },
             legend: {
               labels: {
-                color: 'rgb(255, 150, 200)', // Legend label color
+                color: 'rgb(255, 150, 200)',
                 font: {
                   size: 16,
                   weight: 'bold',
-                  family: 'Arial', // Legend font family
+                  family: 'Arial',
                 },
               },
             },
@@ -117,13 +116,13 @@ onMounted(() => {
           elements: {
             title: {
               display: true,
-              text: 'Number of Schools', // Chart label text
+              text: 'Number of Schools',
               font: {
-                size: 18, // Custom font size for dataset label
+                size: 18,
                 weight: 'bold',
-                family: 'Arial', // Font family for dataset label
+                family: 'Arial',
               },
-              color: 'rgb(0, 255, 0)', // Custom color for dataset label
+              color: 'rgb(0, 255, 0)',
             },
           },
         },

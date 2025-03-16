@@ -29,7 +29,7 @@
 import FrontHeader from '@/components/FrontHeader.vue'
 import TestCard from '@/components/TestCard.vue'
 import InteractHeader from '@/components/InteractHeader.vue'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 let schools = ref(['placeholder'])
 async function getSchools() {
   try {
@@ -43,9 +43,11 @@ async function getSchools() {
 onMounted(() => {
   getSchools()
 })
-
-let searchSchools = schools.filter((school) =>
-  school.location.toLowerCase().includes(search.toLowerCase()),
+const search = ref('')
+const searchSchools = computed(() =>
+  schools.value.filter((school) =>
+    school.location?.toLowerCase().includes(search.value.toLowerCase()),
+  ),
 )
 </script>
 

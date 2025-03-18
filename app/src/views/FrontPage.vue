@@ -20,14 +20,14 @@
       </div>
     </InteractHeader>
     <div class="bg-red-700 flex flex-wrap justify-center h-[70vh] overflow-y-auto">
-      <TestCard v-for="school in searchSchools" :key="school.location" :school="school" />
+      <SchoolCard v-for="school in searchSchools" :key="school.location" :school="school" />
     </div>
   </main>
 </template>
 
 <script setup>
 import FrontHeader from '@/components/FrontHeader.vue'
-import TestCard from '@/components/TestCard.vue'
+import SchoolCard from '@/components/SchoolCard.vue'
 import InteractHeader from '@/components/InteractHeader.vue'
 import { onMounted, ref, computed } from 'vue'
 let schools = ref(['placeholder'])

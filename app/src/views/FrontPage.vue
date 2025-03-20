@@ -30,7 +30,7 @@ import FrontHeader from '@/components/FrontHeader.vue'
 import SchoolCard from '@/components/SchoolCard.vue'
 import InteractHeader from '@/components/InteractHeader.vue'
 import { onMounted, ref, computed } from 'vue'
-let schools = ref(['placeholder'])
+let schools = ref([])
 async function getSchools() {
   try {
     let res = await fetch('https://data.cityofnewyork.us/resource/ven4-h25u.json?$limit=1577')

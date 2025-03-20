@@ -15,11 +15,11 @@
         <button>Percent</button>
       </RouterLink>
       <div class="flex flex-col items-center my-4">
-        <label for="search" class="mb-2">Search by School Name</label>
+        <label for="search" class="mb-2 text-black">Search by School Name</label>
         <input type="text" id="search" v-model="search" class="border-2 border-black p-2 w-1/2" />
       </div>
     </InteractHeader>
-    <div class="bg-red-700 flex flex-wrap justify-center h-[70vh] overflow-y-auto">
+    <div class="bg-gray-600 flex flex-wrap justify-center h-[70vh] overflow-y-auto">
       <SchoolCard v-for="school in searchSchools" :key="school.location" :school="school" />
     </div>
   </main>

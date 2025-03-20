@@ -72,7 +72,7 @@ onMounted(() => {
           scales: {
             x: {
               ticks: {
-                color: 'rgb(255, 165, 0)',
+                color: 'rgb(255, 255, 255)',
                 font: {
                   size: 17,
                   weight: 'bold',
@@ -82,7 +82,7 @@ onMounted(() => {
             },
             y: {
               ticks: {
-                color: 'rgb(0, 100, 255)',
+                color: 'rgb(255, 255, 255)',
                 font: {
                   size: 17,
                   weight: 'bold',
@@ -100,11 +100,11 @@ onMounted(() => {
                 weight: 'bold',
                 family: 'Arial',
               },
-              color: 'rgb(0, 250, 0)',
+              color: 'rgb(250, 250, 250)',
             },
             legend: {
               labels: {
-                color: 'rgb(255, 150, 200)',
+                color: 'rgb(220, 220, 220)',
                 font: {
                   size: 16,
                   weight: 'bold',
@@ -122,7 +122,6 @@ onMounted(() => {
                 weight: 'bold',
                 family: 'Arial',
               },
-              color: 'rgb(0, 255, 0)',
             },
           },
         },

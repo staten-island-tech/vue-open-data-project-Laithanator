@@ -15,7 +15,7 @@
         <button>Money</button>
       </RouterLink>
     </InteractHeader>
-    <div class="bg-red-700 flex flex-wrap justify-center"><PercentChart :schools="schools" /></div>
+    <div class="bg-gray-600 flex flex-wrap justify-center"><PercentChart :schools="schools" /></div>
   </main>
 </template>
 

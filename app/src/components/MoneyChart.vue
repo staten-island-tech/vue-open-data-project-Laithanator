@@ -75,7 +75,7 @@ onMounted(() => {
           ],
         },
         options: {
-          responsive: true, // Chart.js will manage the responsiveness
+          responsive: true,
           plugins: {
             legend: {
               labels: {
@@ -88,12 +88,12 @@ onMounted(() => {
                   'rgb(128, 0, 128)',
                 ],
                 font: {
-                  size: 14, // Adjust font size if needed
+                  size: 14,
                 },
               },
             },
           },
-          aspectRatio: 1, // Optional: Adjust aspect ratio to control chart shape
+          aspectRatio: 1,
         },
       })
     },
